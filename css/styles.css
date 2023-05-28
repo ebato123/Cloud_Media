@@ -1,4 +1,232 @@
+/** FUENTES GOOGLE **/
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+* {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+/**--------------------------------- BODY ---------------------------------**/
 body {
-    background-color: whitesmoke;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  font-family: 'Oswald', sans-serif;
+
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  width: 100%;
+  height: 100%;
+}
+
+/**----------------------- HEADER -----------------------**/
+
+body header {
+  width: 100%;
+  height: 20px;
+}
+
+body img#header {
+  position: fixed;
+  background-size: cover;
+  filter: drop-shadow(5px 2px 5px rgba(0, 30, 255, 0.767));
+  width: 200px;
+  height: 200px;
+
+  left: 88%;
+  bottom: 0.1%;
+}
+
+/**----------------------- MAIN -----------------------**/
+body main {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+body main section#SECCION-1 {
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  width: 100%;
+  height: 500px;
+}
+
+body main section#SECCION-1 article.sec1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+
+  width: 50%;
+  height: 500px;
+}
+
+body main section#SECCION-1 article.sec1 h1 {
+  font-size: 80px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+
+  margin: 10%;
+}
+
+body main section#SECCION-1 article.sec1 img {
+  background-size: contain;
+  margin: 5%;
+  border-radius: 5%;
+  box-shadow: 7px 5px 20px rgba(0, 17, 142, 0.724);
+
+  width: 650px;
+  height: 350px;
+}
+
+body main section#SECCION-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+body main section#SECCION-2 article.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+body main section#SECCION-2 article.sec img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  border-radius: 20%;
+  box-shadow: 7px 5px 20px rgba(0, 17, 142, 0.724);
+
+  width: 150px;
+  height: 150px;
+}
+
+body main section#SECCION-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 600px;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+body main section#SECCION-3 form {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  box-shadow: 0px 0px 50px rgba(0, 17, 142, 0.724);
+  border-radius: 20%;
+
+  width: 40%;
+  height: 80%;
+
+  padding-bottom: 1%;
+}
+
+body main section#SECCION-3 form label{
+  font-size: 50px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 2px 15px rgba(0, 30, 255, 0.767);
+}
+
+body main section#SECCION-3 form input{
+  text-align: center;
+  border-radius: 5%;  
+  box-shadow: 0px 0px 15px rgba(0, 17, 142, 0.724);
+
+  width: 80%;
+  height: 10%;
+}
+
+body main section#SECCION-3 form button{
+  border-radius: 5%;
+  box-shadow: 0px 0px 15px rgba(0, 17, 142, 0.724);
+
+  width: 20%;
+  height: 10%;
+}
+
+body main section#SECCION-3 form p{
+  font-size: 25px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/**----------------------- FOOTER -----------------------**/
+body footer{
+  display: flex;
+  flex-direction: row;
+
+  background-color: rgba(0, 11, 92, 0.484);
+
+  width: 100%;
+  height: 300px;
+}
+
+body footer article.sec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 33.3%;
+  height: 100%;
+}
+
+body footer article.sec img{
+  background-size: contain;
+
+  width: 250px;
+  height: 250px;
+}
+
+body footer article.sec a{
+  width: 250px;
+  height: 50px;
+}
+
+body footer article.sec a button{
+  width: 250px;
+  height: 50px;
+}
+
+body footer article.sec p{
+  font-size: 20px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
 }
