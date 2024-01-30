@@ -77,15 +77,20 @@ main section#M-SECTION-1 h2 {
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
   padding: 26% 10% 10% 10%;
 }
+main section#M-SECTION-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 main section#M-SECTION-2 img {
   background-size: contain;
   margin: 5%;
   border-radius: 5%;
-  box-shadow: 7px 5px 20px rgba(0, 17, 142, 0.724);
+  box-shadow: 7px 5px 30px rgba(0, 17, 142, 0.724);
   min-width: 1px;
-  width: 300px;
   max-width: 850px;
   height: auto;
+  padding: 0%;
 }
 main section#M-SECTION-3 {
   display: flex;

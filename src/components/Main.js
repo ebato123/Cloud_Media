@@ -24,10 +24,10 @@ export default class Main extends React.Component {
     render() {
         return(
             <main className="row">
-                <section id="M-SECTION-1" className="col-12 col-xxl-6 SECTION">
+                <section id="M-SECTION-1" className="row SECTION">
                     <h2>Una nube de multimedia al alcance de tu mano.</h2>
                 </section>
-                <section id="M-SECTION-2" className="col-12 col-xxl-6 SECTION p-5">
+                <section id="M-SECTION-2" className="row SECTION p-5">
                     <img src={mainImage} alt="family-tv"></img>
                 </section>
                 <section id="M-SECTION-3" className="row p-3">

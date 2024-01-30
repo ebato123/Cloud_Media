@@ -18,16 +18,20 @@ main{
         }
     }
     section#M-SECTION-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img{
             background-size: contain;
             margin: 5%;
             border-radius: 5%;
-            box-shadow: 7px 5px 20px rgba(0, 17, 142, 0.724);
+            box-shadow: 7px 5px 30px rgba(0, 17, 142, 0.724);
             min-width: 1px;
-            width: 300px;
+            // width: 320px;
             max-width: 850px;
 
             height: auto;
+            padding: 0%;
         }
     }
     section#M-SECTION-3{
