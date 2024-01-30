@@ -70,11 +70,6 @@ main {
   width: 100vw !important;
   margin: 0% !important;
 }
-main .SECTION {
-  display: flex;
-  align-items: start !important;
-  justify-content: flex-start;
-}
 main section#M-SECTION-1 h2 {
   color: aliceblue;
   font-size: 3rem;
