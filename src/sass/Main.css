@@ -83,6 +83,7 @@ main section#M-SECTION-2 img {
   border-radius: 5%;
   box-shadow: 7px 5px 20px rgba(0, 17, 142, 0.724);
   min-width: 1px;
+  width: 300px;
   max-width: 850px;
   height: auto;
 }
