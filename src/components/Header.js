@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "C:/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/cloud-media-logo.png";
+import logo from "../cloud-media-logo.png";
 
 import LinkButton from "./LinkButton";
 

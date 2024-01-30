@@ -2,21 +2,22 @@
 import React from "react";
 import Media from "./Media";
 // import Form from "./Form";
-import mainImage from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/family_watching_tv.webp";
+
 
 /*Logo Imports*/
-import netflixLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/netflix.png";
-import hboLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/hbo.png";
-import primeLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/amazon-prime.png";
-import appleLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/apple-tv.png";
-import disneyLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/disney-plus.png";
-import starLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/star-plus.jpg";
-import paramountLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/paramount-plus.png";
-import youtubeLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/youtube.png";
-import twitchLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/twitch.jpg";
-import crunchyLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/Crunchyroll.webp";
-import flowLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/flow.jpg";
-import plutoLogo from "/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/img/pluto-tv.jpg";
+import mainImage from "../family_watching_tv.webp";
+import netflixLogo from "../netflix.png";
+import hboLogo from "../hbo.png";
+import primeLogo from "../amazon-prime.png";
+import appleLogo from "../apple-tv.png";
+import disneyLogo from "../disney-plus.png";
+import starLogo from "../star-plus.jpg";
+import paramountLogo from "../paramount-plus.png";
+import youtubeLogo from "../youtube.png";
+import twitchLogo from "../twitch.jpg";
+import crunchyLogo from "../Crunchyroll.webp";
+import flowLogo from "../flow.jpg";
+import plutoLogo from "../pluto-tv.jpg";
 
 
 export default class Main extends React.Component {
