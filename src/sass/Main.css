@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body div#App main section#M-SECTION-3 a.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: 3%;
+}
+
+body div#App main section#M-SECTION-3 img.media {
+  width: 90px;
+  height: 90px;
+  border-radius: 20%;
+  box-shadow: 5px 3px 10px rgba(0, 17, 142, 0.724);
+  margin-bottom: 12px;
+}
+
+/* EMPROLIJAR SEMÁNTICA */
+body div#App form {
+  align-items: center;
+  box-shadow: 0px 0px 50px rgba(0, 17, 142, 0.724);
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 600px;
+  margin-top: 10%;
+  min-height: 480px;
+  padding-bottom: 1%;
+}
+body div#App form article#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body div#App form article#buttons button, body div#App form article#buttons div {
+  margin: 2%;
+}
+body div#App form h2 {
+  color: aliceblue;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 5px 2px 15px rgba(0, 30, 255, 0.767);
+}
+body div#App form article label, body div#App form p {
+  font-size: 1rem;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+}
+body div#App form article input.form-control {
+  box-shadow: 0px 0px 15px rgba(0, 17, 142, 0.724);
+  text-align: center;
+  max-width: 320px;
+}
+body div#App form label {
+  font-size: 20px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+  margin: 0% !important;
+}
+main .SECTION {
+  display: flex;
+  align-items: start !important;
+  justify-content: flex-start;
+}
+main section#M-SECTION-1 h2 {
+  color: aliceblue;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+  padding: 26% 10% 10% 10%;
+}
+main section#M-SECTION-2 img {
+  background-size: contain;
+  margin: 5%;
+  border-radius: 5%;
+  box-shadow: 7px 5px 20px rgba(0, 17, 142, 0.724);
+  min-width: 1px;
+  max-width: 850px;
+  height: auto;
+}
+main section#M-SECTION-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0% !important;
+}/*# sourceMappingURL=Main.css.map */

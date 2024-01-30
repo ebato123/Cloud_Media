@@ -1,0 +1,22 @@
+
+@import "C:/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/sass/partials/animations";
+
+header{
+    width: 100vw !important;
+    margin: 0% !important;
+    #H-SECTION-1{
+        img{
+            position: fixed;
+            width: 180px;
+            height: 180px;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+    }
+    #H-SECTION-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:  130px;
+    }
+}

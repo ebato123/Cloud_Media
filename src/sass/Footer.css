@@ -1,0 +1,19 @@
+footer {
+  width: 100% !important;
+  background-color: black;
+  height: 200px;
+  margin: 0% !important;
+}
+footer section {
+  padding: 2%;
+}
+footer section a {
+  margin-bottom: 10px;
+}
+footer section p {
+  color: white;
+}
+footer section img {
+  width: 60px;
+  height: 60px;
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,21 @@
+
+body div#App main section#M-SECTION-3 a.media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    height: 90px;
+
+    margin: 3%;
+}   
+
+body div#App main section#M-SECTION-3 img.media{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 20%;
+    box-shadow: 5px 3px 10px rgba(0, 17, 142, 0.724);
+
+    margin-bottom: 12px;
+}   
