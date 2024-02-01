@@ -1,6 +1,8 @@
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useState } from 'react';
 
 function BasicExample() {
+  const [counter, setCounter] = useState(0);
   return (
     <Dropdown>
       <Dropdown.Toggle variant="outline-light" id="dropdown-basic">

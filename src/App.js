@@ -11,8 +11,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/login" element={<LogIn />}></Route>
+          <Route path="/" element={<Home lang="es"/>}></Route>
+          <Route path="/en" element={<Home lang="en"/>}></Route>
+          <Route path="/login" element={<LogIn lang="es" />}></Route>
+          <Route path="/login/en" element={<LogIn lang="en" />}></Route>
         </Routes>
       </Router>
     </>

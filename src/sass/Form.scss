@@ -1,7 +1,8 @@
 
 /* EMPROLIJAR SEMÁNTICA */
 
-body div#App form{
+body div#App main form{
+    margin: 0% !important;
     align-items: center;
     box-shadow: 0px 0px 50px rgba(0, 17, 142, 0.724);
     border-radius: 20%;
@@ -10,7 +11,7 @@ body div#App form{
     justify-content:space-around;
     max-width: 600px;
     margin-top: 10%;
-    min-height: 480px;
+    min-height: 380px;
     padding-bottom: 1%;
     article#buttons{
         display: flex;

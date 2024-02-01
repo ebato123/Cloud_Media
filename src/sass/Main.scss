@@ -17,6 +17,9 @@ main{
             padding: 26% 10% 10% 10%;
         }
     }
+    section#LM-SECTION-1{
+        padding: 5% !important;
+    }
     section#M-SECTION-2{
         display: flex;
         align-items: center;
@@ -27,9 +30,7 @@ main{
             border-radius: 5%;
             box-shadow: 7px 5px 30px rgba(0, 17, 142, 0.724);
             min-width: 1px;
-            // width: 320px;
             max-width: 850px;
-
             height: auto;
             padding: 0%;
         }
