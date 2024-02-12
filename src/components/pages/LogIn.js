@@ -7,18 +7,16 @@ import Footer from "../Footer";
 export default class LogIn extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-            languaje: this.props.lang
-        }
+        this.state = {}
     }
     render() {
         let index = "";
-        this.props.languaje === "en"?index="/login/en":index="/login";
+        this.props.language === "en"?index="/login/en":index="/login";
         return(
             <>
                 <Header lang={this.props.lang} path={index}/>
-                <Main path="/login" lang={this.props.lang}/>
-                <Footer lang={this.props.lang}/>
+                <Main lang={this.props.lang} path={index}/>
+                <Footer lang={this.props.lang} path={index}/>
             </>
         );
     }

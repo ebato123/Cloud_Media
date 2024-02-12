@@ -22,14 +22,11 @@ import plutoLogo from "../pluto-tv.jpg";
 export default class Main extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-            languaje: this.props.lang,
-            path: this.props.path
-        }
+        this.state = {}
     }
     render() {
         let mainTittle = "";
-        switch(this.state.languaje){
+        switch(this.props.lang){
             case "es":
                 mainTittle = "Una nube de multimedia al alcance de tu mano.";
                 break;
@@ -38,12 +35,12 @@ export default class Main extends React.Component {
                 break
             default:
                 // this.setState({
-                //     languaje: "es"
+                //     language: "es"
                 // })
                 break
         }
         // LOGIN MAIN
-        if(this.props.path === "/login"){
+        if(this.props.path === ("/login" || "/login/en")){
             return(
                 <main className="row">
                     <section id="LM-SECTION-1" className="row SECTION">

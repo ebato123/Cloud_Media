@@ -5,26 +5,16 @@ export default class Form extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-        languaje : this.props.lang,
-        estadoActual: this.languaje === "en"? "subscribe" : "suscribirse"
+        estadoActual : this.props.lang === "en" ? "subscribe" : "suscribirse",
+        alert1 : " "
     }
     this.toggleState = this.toggleState.bind(this);
+    this.submitted = this.submitted.bind(this);
   }
-
 
   toggleState(){
     let estadoActual = this.state.estadoActual;
-    if(this.state.languaje === "es"){
-        if(estadoActual === "suscribirse"){
-            this.setState({
-                estadoActual: "iniciarSesion"
-            });
-        }else{
-            this.setState({
-                estadoActual: "suscribirse"
-            })
-        }
-    }if(this.state.languaje === "en"){
+    if(this.props.lang === "en"){
         if(estadoActual === "subscribe"){
             this.setState({
                 estadoActual: "login"
@@ -34,7 +24,38 @@ export default class Form extends React.Component {
                 estadoActual: "subscribe"
             })
         }
+    }else{
+        if(estadoActual === "suscribirse"){
+            this.setState({
+                estadoActual: "iniciarSesion"
+            });
+        }else{
+            this.setState({
+                estadoActual: "suscribirse"
+            })
+        }
     }
+  }
+
+  submitted(event){
+    let alert1 = this.state.alert1.toString();
+    let estadoActual = this.state.estadoActual.toString();
+    switch(estadoActual){
+        case "login":
+            alert1 = "Back-End is not ready yet :(";
+            break
+        case "iniciarSesion":
+            alert1 = "El Back-End aún no está terminado :("
+            break
+        case "subscribe":
+            alert1 = "You have been subscribed succesfully.";
+            break
+        // "suscribirse"
+        default :
+            alert1 = "Suscripción completada.";
+    }
+    alert(alert1);
+    // event.peventDefault();
   }
 
   render() {
@@ -47,8 +68,8 @@ export default class Form extends React.Component {
     let buttonTittle1 = "";
     let buttonTittle2 = "";
     let estadoActual = this.state.estadoActual;
-    let languaje = this.state.languaje;
-    switch(languaje){
+    let language = this.props.lang;
+    switch(language){
         case "en":
             switch(estadoActual){
                 case "login":
@@ -97,7 +118,7 @@ export default class Form extends React.Component {
             }
     }
     return(
-        <form className="p-3 m-5">
+        <form onSubmit={this.submitted} className="p-3 m-5">
             <h2>{formTittle}</h2>
             <article className="form-group">
                 <label>Email</label>

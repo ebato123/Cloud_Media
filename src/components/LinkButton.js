@@ -6,7 +6,7 @@ export default class LinkButton extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            languaje: this.props.lang,
+            language: this.props.lang,
             path: this.props.path
         }
     }
@@ -15,7 +15,7 @@ export default class LinkButton extends React.Component {
         let path = "";
         switch(this.state.path){
             case "/login" || "/login/en":
-                switch(this.state.languaje){
+                switch(this.state.language){
                     case "en":
                         linkTittle = "Home";
                         path = "/en";
@@ -26,7 +26,7 @@ export default class LinkButton extends React.Component {
                         break;
                 }break;
             default:
-                switch(this.state.languaje){
+                switch(this.state.language){
                     case "en":
                         linkTittle = "Log In";
                         path = "/login/en";

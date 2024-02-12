@@ -9,15 +9,15 @@ export default class Footer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            languaje: this.props.lang
+            language: this.props.lang
         }
     }
     render() {
         return(
             <footer className="row mt-5 p-5">
                 <section className="col-6">
-                    <LinkButton lang={this.props.lang}/>
-                    <BasicExample />
+                    <LinkButton lang={this.props.lang} path={this.props.path}/>
+                    <BasicExample lang={this.props.lang} path={this.props.path}/>
                 </section>
                 <section className="col-6">
                     <p>Cloud Media Team</p>
