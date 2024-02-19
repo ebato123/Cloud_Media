@@ -1,8 +1,8 @@
 import Dropdown from "react-bootstrap/Dropdown";
-import { useState } from "react";
+// import { useState } from "react";
 
 function BasicExample(props) {
-  const [path, setPath] = useState(props.path);
+  // const [path, setPath] = useState(props.path);
 
   // changing variables
   let dropdownTittle = "";

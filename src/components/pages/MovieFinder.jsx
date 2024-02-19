@@ -4,23 +4,18 @@
 import { apiContext } from "../../context/apiContext.js";
 
 // DEPENDENCIES IMPORTS
-import React, { useEffect, useContext } from "react";
-import YouTube from "react-youtube";
+import React, { useContext } from "react";
+// import YouTube from "react-youtube";
 
 // COMPONENTS IMPORTS
 import Header from "../Header.jsx";
-import Main from "../Main.jsx";
+// import Main from "../Main.jsx";
 import Footer from "../Footer.jsx";
 import Accordion from "../Accordion.jsx";
 import Form from "../Form.jsx";
 
 export default function MovieFinder(props, { children }) {
-  const { fetchMovies, movies, URL_IMAGE } = useContext(apiContext);
-
-  //Component LifeCycle
-  useEffect(() => {
-    fetchMovies();
-  }, []);
+  const { movies, URL_IMAGE } = useContext(apiContext);
 
   return (
     <>

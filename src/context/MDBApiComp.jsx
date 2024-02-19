@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 import { apiContext } from "./apiContext";
@@ -37,6 +37,10 @@ export default function MDBApiComp({ children }) {
     e.preventDefault();
     fetchMovies(searchKey);
   };
+
+  useEffect(() => {
+    fetchMovies();
+  },[]);
 
   return (
     <apiContext.Provider
