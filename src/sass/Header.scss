@@ -1,6 +1,4 @@
 
-@import "C:/Users/elian/Desktop/PROGRAMACIÓN/cloud-media/src/sass/partials/animations";
-
 header{
     width: 100vw !important;
     margin: 0% !important;
@@ -11,6 +9,7 @@ header{
             height: 180px;
             margin-left: 5%;
             margin-top: 2%;
+            z-index: 100 !important;
         }
     }
     #H-SECTION-2{

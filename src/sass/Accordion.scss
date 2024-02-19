@@ -1,0 +1,35 @@
+@import '../sass/partials/colors';
+
+body div#App main div.accordion{
+    align-items: center;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    .accordion-item{
+        background: none;
+        width: 90%;
+        .accordion-header{}
+        .accordion-collapse{
+            background: none;
+            .row div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img{
+                    
+                    border-radius: 10px;
+                    background: #e0e0e0;
+                    box-shadow:  -6px -6px 9px $main-color,
+                                 6px 6px 9px $main-color;
+                }
+                h4{
+                    color: whitesmoke;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}

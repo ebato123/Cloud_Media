@@ -22,6 +22,12 @@ body div#App main form article#buttons {
 body div#App main form article#buttons button, body div#App main form article#buttons div {
   margin: 2%;
 }
+body div#App main form input#search {
+  height: 50px;
+  width: 80%;
+  border-radius: 55px;
+  text-align: center;
+}
 body div#App main form h2 {
   color: aliceblue;
   font-size: 2em;

@@ -1,28 +1,24 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "./sass/Header.css";
 @import "./sass/Main.css";
+@import "./sass/Footer.css";
+/* Partials */
+/* Cloud Logo Animation */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-footer {
-  width: 100% !important;
-  background-color: black;
-  height: 200px;
-  margin: 0% !important;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.slide-top {
+  animation: slide-top 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite alternate both;
 }
-footer section {
-  padding: 2%;
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
-footer section a {
-  margin-bottom: 10px;
-}
-footer section p {
-  color: white;
-}
-footer section img {
-  width: 60px;
-  height: 60px;
-}
-
 /* Google Fonts */
 * {
   flex-wrap: wrap;
@@ -30,7 +26,15 @@ footer section img {
 }
 
 body {
+  align-items: center;
   background-image: url("./background.jpg");
+  display: flex;
+  flex-direction: column;
   font-family: "Oswald", sans-serif;
   height: 100% !important;
+}
+
+p, h2, h4 {
+  color: aliceblue;
+  text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
 }/*# sourceMappingURL=App.css.map */

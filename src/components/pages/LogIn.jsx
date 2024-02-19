@@ -10,13 +10,11 @@ export default class LogIn extends React.Component {
         this.state = {}
     }
     render() {
-        let index = "";
-        this.props.language === "en"?index="/login/en":index="/login";
         return(
             <>
-                <Header lang={this.props.lang} path={index}/>
-                <Main lang={this.props.lang} path={index}/>
-                <Footer lang={this.props.lang} path={index}/>
+                <Header lang={this.props.lang} path={this.props.path}/>
+                <Main lang={this.props.lang} path={this.props.path}/>
+                <Footer lang={this.props.lang} path={this.props.path}/>
             </>
         );
     }

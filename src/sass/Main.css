@@ -39,6 +39,12 @@ body div#App main form article#buttons {
 body div#App main form article#buttons button, body div#App main form article#buttons div {
   margin: 2%;
 }
+body div#App main form input#search {
+  height: 50px;
+  width: 80%;
+  border-radius: 55px;
+  text-align: center;
+}
 body div#App main form h2 {
   color: aliceblue;
   font-size: 2em;
@@ -61,6 +67,37 @@ body div#App main form label {
   text-align: center;
   color: aliceblue;
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+}
+
+body div#App main div.accordion {
+  align-items: center;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+body div#App main div.accordion .accordion-item {
+  background: none;
+  width: 90%;
+}
+body div#App main div.accordion .accordion-item .accordion-collapse {
+  background: none;
+}
+body div#App main div.accordion .accordion-item .accordion-collapse .row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body div#App main div.accordion .accordion-item .accordion-collapse .row div img {
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: -6px -6px 9px #000235, 6px 6px 9px #000235;
+}
+body div#App main div.accordion .accordion-item .accordion-collapse .row div h4 {
+  color: whitesmoke;
+  margin-top: 8px;
 }
 
 main {

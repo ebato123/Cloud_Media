@@ -1,7 +1,12 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "./sass/Header.css";
 @import "./sass/Main.css";
-@import "./sass/Footer.scss";
+@import "./sass/Footer.css";
+
+/* Partials */
+@import "../src/sass/partials/animations";
+@import "../src/sass/partials/colors";
+@import "../src/sass/partials/fonts";
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -13,8 +18,16 @@
 }
 
 body{
+    align-items: center;
     background-image: url("./background.jpg");
+    display: flex;
+    flex-direction: column;
     font-family: 'Oswald', sans-serif;
     height: 100% !important;
+}
+
+p, h2, h4{
+    color: aliceblue;
+    text-shadow: 5px 2px 5px $light-main-color;
 }
 
