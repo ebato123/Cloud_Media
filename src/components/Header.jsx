@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../cloud-media-logo.png";
+import logo from "../img/cloud-media-logo.png";
 
 import LinkButton from "./LinkButton";
 

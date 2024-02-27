@@ -27,11 +27,12 @@
 
 body {
   align-items: center;
-  background-image: url("./background.jpg");
+  background-image: url("./img/background.jpg");
   display: flex;
   flex-direction: column;
   font-family: "Oswald", sans-serif;
-  height: 100% !important;
+  justify-content: space-between;
+  height: 100vh !important;
 }
 
 p, h2, h4 {

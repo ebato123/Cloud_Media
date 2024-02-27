@@ -10,8 +10,21 @@ export default class LinkButton extends React.Component {
     render() {
         let linkTittle = "";
         let path = "";
+
+        // MOVIEFINDER LINKBUTTON
+        if(this.props.btnType === "MovieFinder"){
+            switch(this.props.lang){
+                case "en":
+                    linkTittle = "Movie Finder";
+                    path = "/movie_finder/en";
+                    break;
+                default:
+                    linkTittle = "Buscar Películas";
+                    path = "/movie_finder";
+                    break;
+            }
         // LOGIN LINKBUTTON
-        if(this.props.path === "/login" || this.props.path === "/login/en"){
+        }else if(this.props.path === "/login" || this.props.path === "/login/en"){
             switch(this.props.lang){
                 case "en":
                     linkTittle = "Home";
@@ -22,6 +35,7 @@ export default class LinkButton extends React.Component {
                     path = "/";
                     break;
             }
+
         // HOME LINKBUTTON
         }else{
             switch(this.props.lang){
@@ -35,6 +49,7 @@ export default class LinkButton extends React.Component {
                     break;
             }
         }
+
         return(
             <Link to={path} className="btn btn-outline-light">{linkTittle}</Link>
         );

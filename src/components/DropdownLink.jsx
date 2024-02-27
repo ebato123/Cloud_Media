@@ -41,7 +41,10 @@ function BasicExample(props) {
     if (props.path === "/login" || props.path === "/login/en") {
       index1 = "/login";
       index2 = "/login/en";
-      // HOME props
+    // HOME props
+    }else if(props.path === "/movie_finder" || props.path === "/movie_finder/en"){
+      index1 = "/movie_finder";
+      index2 = "/movie_finder/en";
     } else {
       index1 = "/";
       index2 = "/en";

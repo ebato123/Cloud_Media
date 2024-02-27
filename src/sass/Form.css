@@ -19,7 +19,8 @@ body div#App main form article#buttons {
   justify-content: center;
   width: 100%;
 }
-body div#App main form article#buttons button, body div#App main form article#buttons div {
+body div#App main form article#buttons button,
+body div#App main form article#buttons div {
   margin: 2%;
 }
 body div#App main form input#search {
@@ -34,7 +35,8 @@ body div#App main form h2 {
   text-align: center;
   text-shadow: 5px 2px 15px rgba(0, 30, 255, 0.767);
 }
-body div#App main form article label, body div#App main form p {
+body div#App main form article label,
+body div#App main form p {
   font-size: 1rem;
   text-align: center;
   color: aliceblue;
@@ -50,4 +52,9 @@ body div#App main form label {
   text-align: center;
   color: aliceblue;
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
+}
+body div#App main form#movie-finder {
+  border-radius: 25px;
+  margin-top: 20px !important;
+  min-height: 200px;
 }/*# sourceMappingURL=Form.css.map */
