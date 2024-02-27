@@ -9,7 +9,7 @@ export default class Media extends React.Component {
   render() {
       return(
         <a href={this.props.href} target="_blank" rel="noreferrer" className={"media "+this.props.className}>
-          <img src={this.props.src} alt={this.props.alt + "-logo"} className={"media "+this.props.className}></img>
+          <img src={this.props.src} alt={this.props.alt + "-logo"} className={"media "+this.props.className} id={this.props.id}></img>
         </a>
       );
   }

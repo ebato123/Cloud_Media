@@ -15,12 +15,12 @@ export default class Footer extends React.Component {
     // MOVIE FINDER FOOTER
     if(this.props.path === "/movie_finder" || this.props.path === "/movie_finder/en"){
       return(
-        <footer className="row mt-5 p-5">
+        <footer className="row mt-5 p-4">
         <section className="col-6">
           <LinkButton lang={this.props.lang} path={this.props.path} />
           <BasicExample lang={this.props.lang} path={this.props.path} />
         </section>
-        <section className="col-6">
+        <section className="col-6" id="sec-2">
           <p>Cloud Media Team</p>
           <img src={logo} alt="cloud-logo"></img>
         </section>
@@ -30,13 +30,13 @@ export default class Footer extends React.Component {
     // HOME FOOTER
     }else{
       return (
-        <footer className="row mt-5 p-5">
+        <footer className="row mt-5 p-4">
           <section className="col-6">
             <LinkButton lang={this.props.lang} path={this.props.path} />
             <BasicExample lang={this.props.lang} path={this.props.path} />
             <LinkButton lang={this.props.lang} path={this.props.path} btnType="MovieFinder"/>
           </section>
-          <section className="col-6">
+          <section className="col-6" id="sec-2">
             <p>Cloud Media Team</p>
             <img src={logo} alt="cloud-logo"></img>
           </section>

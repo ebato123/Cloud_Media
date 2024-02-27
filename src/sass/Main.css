@@ -12,8 +12,22 @@ body div#App main section#M-SECTION-3 img.media {
   width: 90px;
   height: 90px;
   border-radius: 20%;
-  box-shadow: 5px 3px 10px rgba(0, 17, 142, 0.724);
   margin-bottom: 12px;
+}
+body div#App main section#M-SECTION-3 img.media#netflix {
+  box-shadow: 5px 3px 10px rgba(215, 0, 0, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#hbo, body div#App main section#M-SECTION-3 img.media#twitch {
+  box-shadow: 5px 3px 10px rgba(156, 74, 255, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#apple, body div#App main section#M-SECTION-3 img.media#youtube, body div#App main section#M-SECTION-3 img.media#paramount, body div#App main section#M-SECTION-3 img.media#prime, body div#App main section#M-SECTION-3 img.media#disney, body div#App main section#M-SECTION-3 img.media#pluto {
+  box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#star, body div#App main section#M-SECTION-3 img.media#crunchy {
+  box-shadow: 5px 3px 10px rgba(255, 196, 0, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#flow {
+  box-shadow: 5px 3px 10px rgba(1, 232, 163, 0.724) !important;
 }
 
 /* EMPROLIJAR SEMÁNTICA */
@@ -120,7 +134,7 @@ main section#M-SECTION-1 h2 {
   font-size: 3rem;
   text-align: center;
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
-  padding: 26% 10% 10% 10%;
+  padding: 35px 35px 35px 35px;
 }
 main section#LM-SECTION-1 {
   padding: 5% !important;
@@ -130,10 +144,9 @@ main section#M-SECTION-2 {
   align-items: center;
   justify-content: center;
 }
-main section#M-SECTION-2 img {
+main section#M-SECTION-2 video {
   background-size: contain;
-  margin: 5%;
-  border-radius: 5%;
+  border-radius: 5px;
   box-shadow: 7px 5px 30px rgba(0, 17, 142, 0.724);
   min-width: 1px;
   max-width: 850px;

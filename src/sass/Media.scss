@@ -15,7 +15,22 @@ body div#App main section#M-SECTION-3 img.media{
     height: 90px;
 
     border-radius: 20%;
-    box-shadow: 5px 3px 10px rgba(0, 17, 142, 0.724);
+    // box-shadow: 5px 3px 10px rgba(0, 17, 142, 0.724);
 
     margin-bottom: 12px;
+    &#netflix{
+        box-shadow: 5px 3px 10px rgba(215, 0, 0, 0.724) !important;
+    }
+    &#hbo, &#twitch{
+        box-shadow: 5px 3px 10px rgba(156, 74, 255, 0.724) !important;
+    }
+    &#apple, &#youtube, &#paramount, &#prime, &#disney, &#pluto{
+        box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.724) !important;
+    }
+    &#star, &#crunchy{
+        box-shadow: 5px 3px 10px rgba(255, 196, 0, 0.724) !important;
+    }
+    &#flow{
+        box-shadow: 5px 3px 10px rgba(1, 232, 163, 0.724) !important;
+    }
 }   
