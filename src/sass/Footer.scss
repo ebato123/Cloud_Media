@@ -1,4 +1,5 @@
 
+// X-SMALL DISPLAY
 
 footer {
   align-items: center;
@@ -49,4 +50,17 @@ footer {
       display: none;
     }
   }
+}
+
+// SMALL DISPLAY 
+@media (min-width: 576px){
+  footer{
+    section.F-SECTION{
+      width: 33.3%;
+
+      &#F-SECTION-3 {
+        display: flex; 
+      }
+    }
+  } 
 }

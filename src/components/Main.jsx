@@ -74,8 +74,8 @@ export default function Main (props, {children}) {
           <h2>{mainTittle}</h2>
         </section>
         <section id="M-SECTION-2" className="row SECTION p-4">
-          <video autoplay muted playsinline loop>
-            <source src={mainVideo} type="../img/Cloud Media MAIN-VIDEO (no tv)/mp4"></source>
+          <video autoplay muted playsinline loop controls>
+            <source src={mainVideo} type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
         </section>

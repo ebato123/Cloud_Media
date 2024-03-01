@@ -35,4 +35,13 @@ footer section.F-SECTION#F-SECTION-2 article#logos a i {
 }
 footer section.F-SECTION#F-SECTION-3 {
   display: none;
+}
+
+@media (min-width: 576px) {
+  footer section.F-SECTION {
+    width: 33.3%;
+  }
+  footer section.F-SECTION#F-SECTION-3 {
+    display: flex;
+  }
 }/*# sourceMappingURL=Footer.css.map */

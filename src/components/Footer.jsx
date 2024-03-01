@@ -38,6 +38,8 @@ export default class Footer extends React.Component {
         </section>
         <section className="col-4 F-SECTION" id="F-SECTION-3">
           <a href="https://www.privacypolicies.com/live/66a54d28-6d2e-41e0-8cc3-28bce02115e9">Privacy Policy</a>
+          <a href="https://www.privacypolicies.com/live/c827e6e9-19e7-4a86-887e-4a3752938ece">Cookies Policy</a>
+          <a href="https://www.privacypolicies.com/live/a40acc17-bf56-4173-81d1-75a571daf0c5">EULA</a>
         </section>
       </footer>
     );
