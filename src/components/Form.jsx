@@ -158,7 +158,7 @@ export default function Form(props, {children}) {
   }
   if (props.path === "/movie_finder" || props.path === "/movie_finder/en") {
     return (
-      <form className="container mb-4" onSubmit={searchMovies} id="movie-finder">
+      <form className="container mb-4 col-12" onSubmit={searchMovies} id="movie-finder">
         <input
           id="search"
           type="text"

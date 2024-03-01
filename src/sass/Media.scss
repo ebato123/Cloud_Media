@@ -21,10 +21,10 @@ body div#App main section#M-SECTION-3 img.media{
     &#netflix{
         box-shadow: 5px 3px 10px rgba(215, 0, 0, 0.724) !important;
     }
-    &#hbo, &#twitch{
-        box-shadow: 5px 3px 10px rgba(156, 74, 255, 0.724) !important;
+    &#twitch,  &#pluto{
+        box-shadow: 5px 3px 10px rgba(187, 61, 255, 0.724) !important;
     }
-    &#apple, &#youtube, &#paramount, &#prime, &#disney, &#pluto{
+    &#apple, &#youtube, &#paramount{
         box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.724) !important;
     }
     &#star, &#crunchy{
@@ -33,4 +33,10 @@ body div#App main section#M-SECTION-3 img.media{
     &#flow{
         box-shadow: 5px 3px 10px rgba(1, 232, 163, 0.724) !important;
     }
+    &#disney, &#prime{
+        box-shadow: 5px 3px 10px rgba(63, 204, 255, 0.724) !important;
+    }
+    &#max{
+        box-shadow: 5px 3px 10px rgba(1, 9, 232, 0.724) !important;
+    } 
 }   

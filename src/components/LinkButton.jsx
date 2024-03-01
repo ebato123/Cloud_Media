@@ -51,7 +51,7 @@ export default class LinkButton extends React.Component {
         }
 
         return(
-            <Link to={path} className="btn btn-outline-light">{linkTittle}</Link>
+            <Link to={path} className={"btn btn-outline-light "+this.props.display}>{linkTittle}</Link>
         );
     }
 }

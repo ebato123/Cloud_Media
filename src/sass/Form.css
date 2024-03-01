@@ -8,7 +8,7 @@ body div#App main form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 600px;
+  max-width: 360px;
   margin-top: 10%;
   min-height: 380px;
   padding-bottom: 1%;
@@ -35,8 +35,7 @@ body div#App main form h2 {
   text-align: center;
   text-shadow: 5px 2px 15px rgba(0, 30, 255, 0.767);
 }
-body div#App main form article label,
-body div#App main form p {
+body div#App main form article label, body div#App main form p {
   font-size: 1rem;
   text-align: center;
   color: aliceblue;
@@ -53,8 +52,9 @@ body div#App main form label {
   color: aliceblue;
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
 }
-body div#App main form#movie-finder {
-  border-radius: 25px;
-  margin-top: 20px !important;
-  min-height: 200px;
+
+body div#App main section#MF-SECTION-1 form {
+  max-width: 400px;
+  min-height: 180px !important;
+  border-radius: 15px !important;
 }/*# sourceMappingURL=Form.css.map */

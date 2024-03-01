@@ -2,24 +2,37 @@ footer {
   align-items: center;
   background-color: black;
   display: flex;
-  height: 200px;
+  height: 250px;
+  justify-content: space-evenly;
   margin: 0% !important;
   width: 100% !important;
 }
-footer section a {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-footer section p {
-  color: white;
-}
-footer section img {
-  width: 60px;
-  height: 60px;
-}
-footer section#sec-2 {
+footer section.F-SECTION {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 50%;
+}
+footer section.F-SECTION a {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+footer section.F-SECTION p {
+  color: white;
+}
+footer section.F-SECTION img {
+  width: 60px;
+  height: 60px;
+}
+footer section.F-SECTION#F-SECTION-2 article#logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer section.F-SECTION#F-SECTION-2 article#logos a i {
+  font-size: 2em;
+  margin: 0px 5px 0px 5px;
+}
+footer section.F-SECTION#F-SECTION-3 {
+  display: none;
 }/*# sourceMappingURL=Footer.css.map */

@@ -17,10 +17,10 @@ body div#App main section#M-SECTION-3 img.media {
 body div#App main section#M-SECTION-3 img.media#netflix {
   box-shadow: 5px 3px 10px rgba(215, 0, 0, 0.724) !important;
 }
-body div#App main section#M-SECTION-3 img.media#hbo, body div#App main section#M-SECTION-3 img.media#twitch {
-  box-shadow: 5px 3px 10px rgba(156, 74, 255, 0.724) !important;
+body div#App main section#M-SECTION-3 img.media#twitch, body div#App main section#M-SECTION-3 img.media#pluto {
+  box-shadow: 5px 3px 10px rgba(187, 61, 255, 0.724) !important;
 }
-body div#App main section#M-SECTION-3 img.media#apple, body div#App main section#M-SECTION-3 img.media#youtube, body div#App main section#M-SECTION-3 img.media#paramount, body div#App main section#M-SECTION-3 img.media#prime, body div#App main section#M-SECTION-3 img.media#disney, body div#App main section#M-SECTION-3 img.media#pluto {
+body div#App main section#M-SECTION-3 img.media#apple, body div#App main section#M-SECTION-3 img.media#youtube, body div#App main section#M-SECTION-3 img.media#paramount {
   box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.724) !important;
 }
 body div#App main section#M-SECTION-3 img.media#star, body div#App main section#M-SECTION-3 img.media#crunchy {
@@ -28,6 +28,12 @@ body div#App main section#M-SECTION-3 img.media#star, body div#App main section#
 }
 body div#App main section#M-SECTION-3 img.media#flow {
   box-shadow: 5px 3px 10px rgba(1, 232, 163, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#disney, body div#App main section#M-SECTION-3 img.media#prime {
+  box-shadow: 5px 3px 10px rgba(63, 204, 255, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#max {
+  box-shadow: 5px 3px 10px rgba(1, 9, 232, 0.724) !important;
 }
 
 /* EMPROLIJAR SEMÁNTICA */
@@ -39,7 +45,7 @@ body div#App main form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 600px;
+  max-width: 360px;
   margin-top: 10%;
   min-height: 380px;
   padding-bottom: 1%;
@@ -66,8 +72,7 @@ body div#App main form h2 {
   text-align: center;
   text-shadow: 5px 2px 15px rgba(0, 30, 255, 0.767);
 }
-body div#App main form article label,
-body div#App main form p {
+body div#App main form article label, body div#App main form p {
   font-size: 1rem;
   text-align: center;
   color: aliceblue;
@@ -84,44 +89,49 @@ body div#App main form label {
   color: aliceblue;
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
 }
-body div#App main form#movie-finder {
-  border-radius: 25px;
-  margin-top: 20px !important;
-  min-height: 200px;
+
+body div#App main section#MF-SECTION-1 form {
+  max-width: 400px;
+  min-height: 180px !important;
+  border-radius: 15px !important;
 }
 
-body div#App main div.accordion {
+body div#App main section#MF-SECTION-2 div.accordion {
   align-items: center;
   background: none;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   width: 100%;
+  padding: 0% !important;
 }
-body div#App main div.accordion .accordion-item {
+body div#App main section#MF-SECTION-2 div.accordion .accordion-item {
   background: none;
   width: 90%;
 }
-body div#App main div.accordion .accordion-item .accordion-collapse {
+body div#App main section#MF-SECTION-2 div.accordion .accordion-item .accordion-collapse {
   background: none;
 }
-body div#App main div.accordion .accordion-item .accordion-collapse .row div {
+body div#App main section#MF-SECTION-2 div.accordion .accordion-item .accordion-collapse .row div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 25px;
 }
-body div#App main div.accordion .accordion-item .accordion-collapse .row div img {
+body div#App main section#MF-SECTION-2 div.accordion .accordion-item .accordion-collapse .row div img {
+  max-width: 60%;
+  height: auto;
   border-radius: 10px;
   background: #e0e0e0;
   box-shadow: -6px -6px 9px #000235, 6px 6px 9px #000235;
 }
-body div#App main div.accordion .accordion-item .accordion-collapse .row div h4 {
+body div#App main section#MF-SECTION-2 div.accordion .accordion-item .accordion-collapse .row div h4 {
   color: whitesmoke;
   margin-top: 8px;
 }
 
-main {
+body div#App main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,22 +139,19 @@ main {
   width: 100vw !important;
   margin: 0% !important;
 }
-main section#M-SECTION-1 h2 {
+body div#App main section#M-SECTION-1 h2 {
   color: aliceblue;
   font-size: 3rem;
   text-align: center;
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
   padding: 35px 35px 35px 35px;
 }
-main section#LM-SECTION-1 {
-  padding: 5% !important;
-}
-main section#M-SECTION-2 {
+body div#App main section#M-SECTION-2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main section#M-SECTION-2 video {
+body div#App main section#M-SECTION-2 video {
   background-size: contain;
   border-radius: 5px;
   box-shadow: 7px 5px 30px rgba(0, 17, 142, 0.724);
@@ -153,9 +160,21 @@ main section#M-SECTION-2 video {
   height: auto;
   padding: 0%;
 }
-main section#M-SECTION-3 {
+body div#App main section#M-SECTION-3 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0% !important;
+}
+body div#App main section#LM-SECTION-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% !important;
+}
+body div#App main section#MF-SECTION-1, body div#App main section#MF-SECTION-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }/*# sourceMappingURL=Main.css.map */

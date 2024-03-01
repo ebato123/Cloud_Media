@@ -16,10 +16,10 @@ body div#App main section#M-SECTION-3 img.media {
 body div#App main section#M-SECTION-3 img.media#netflix {
   box-shadow: 5px 3px 10px rgba(215, 0, 0, 0.724) !important;
 }
-body div#App main section#M-SECTION-3 img.media#hbo, body div#App main section#M-SECTION-3 img.media#twitch {
-  box-shadow: 5px 3px 10px rgba(156, 74, 255, 0.724) !important;
+body div#App main section#M-SECTION-3 img.media#twitch, body div#App main section#M-SECTION-3 img.media#pluto {
+  box-shadow: 5px 3px 10px rgba(187, 61, 255, 0.724) !important;
 }
-body div#App main section#M-SECTION-3 img.media#apple, body div#App main section#M-SECTION-3 img.media#youtube, body div#App main section#M-SECTION-3 img.media#paramount, body div#App main section#M-SECTION-3 img.media#prime, body div#App main section#M-SECTION-3 img.media#disney, body div#App main section#M-SECTION-3 img.media#pluto {
+body div#App main section#M-SECTION-3 img.media#apple, body div#App main section#M-SECTION-3 img.media#youtube, body div#App main section#M-SECTION-3 img.media#paramount {
   box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.724) !important;
 }
 body div#App main section#M-SECTION-3 img.media#star, body div#App main section#M-SECTION-3 img.media#crunchy {
@@ -27,4 +27,10 @@ body div#App main section#M-SECTION-3 img.media#star, body div#App main section#
 }
 body div#App main section#M-SECTION-3 img.media#flow {
   box-shadow: 5px 3px 10px rgba(1, 232, 163, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#disney, body div#App main section#M-SECTION-3 img.media#prime {
+  box-shadow: 5px 3px 10px rgba(63, 204, 255, 0.724) !important;
+}
+body div#App main section#M-SECTION-3 img.media#max {
+  box-shadow: 5px 3px 10px rgba(1, 9, 232, 0.724) !important;
 }/*# sourceMappingURL=Media.css.map */

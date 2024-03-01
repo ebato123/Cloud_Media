@@ -13,7 +13,7 @@ import Form from "./Form";
 /*Logo Imports*/
 import mainVideo from "../img/Cloud Media MAIN-VIDEO (no tv).mp4";
 import netflixLogo from "../img/netflix.png";
-import hboLogo from "../img/hbo.png";
+import maxLogo from "../img/max.png";
 import primeLogo from "../img/amazon-prime.png";
 import appleLogo from "../img/apple-tv.png";
 import disneyLogo from "../img/disney-plus.png";
@@ -24,8 +24,6 @@ import twitchLogo from "../img/twitch.jpg";
 import crunchyLogo from "../img/Crunchyroll.webp";
 import flowLogo from "../img/flow.jpg";
 import plutoLogo from "../img/pluto-tv.jpg";
-
-
 
 
 export default function Main (props, {children}) {
@@ -58,9 +56,13 @@ export default function Main (props, {children}) {
   if (props.path === "/movie_finder" || props.path === "/movie_finder/en") {
     return(
       <main className="container mt-3">
-      <Form lang={props.lang} path={props.path} />
-      <Accordion movies={movies} URL_IMAGE={URL_IMAGE} lang={props.lang} />
-    </main>
+        <section id="MF-SECTION-1" className="row">
+          <Form lang={props.lang} path={props.path} />
+        </section>
+        <section id="MF-SECTION-2" className="row">
+          <Accordion movies={movies} URL_IMAGE={URL_IMAGE} lang={props.lang} />
+        </section>
+      </main>
     )
   }
 
@@ -82,10 +84,10 @@ export default function Main (props, {children}) {
             id="netflix"
           ></Media>
           <Media
-            href="https://play.hbomax.com/page/urn:hbo:page:home"
-            src={hboLogo}
-            alt="hbo"
-            id="hbo"
+            href="https://auth.max.com"
+            src={maxLogo}
+            alt="max"
+            id="max"
           ></Media>
           <Media
             href="https://www.primevideo.com"

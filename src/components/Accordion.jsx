@@ -22,12 +22,10 @@ function AllCollapseExample(props) {
         <Accordion.Body>
           <div className="row">
             {movies.map((movie) => (
-              <div key={movie.id} className="col-6 col-sm-4 mb-3">
+              <div key={movie.id} className="col-12 col-sm-6 mb-3">
                 <img
                   src={`${URL_IMAGE + movie.poster_path}`}
                   alt="movie-img"
-                  height={200}
-                  width="%50"
                 ></img>
                 <h4 className="text-center">{movie.title}</h4>
               </div>

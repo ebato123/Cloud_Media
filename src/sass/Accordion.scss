@@ -1,16 +1,16 @@
 @import '../sass/partials/colors';
 
-body div#App main div.accordion{
+body div#App main section#MF-SECTION-2 div.accordion{
     align-items: center;
     background: none;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     width: 100%;
+    padding: 0% !important;
     .accordion-item{
         background: none;
         width: 90%;
-        .accordion-header{}
         .accordion-collapse{
             background: none;
             .row div{
@@ -18,8 +18,10 @@ body div#App main div.accordion{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                padding-bottom: 25px;
                 img{
-                    
+                    max-width: 60%;
+                    height: auto;
                     border-radius: 10px;
                     background: #e0e0e0;
                     box-shadow:  -6px -6px 9px $main-color,
