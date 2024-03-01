@@ -6,7 +6,7 @@ import React, { useContext } from "react";
 import { apiContext } from "../context/apiContext.js";
 
 // COMPONENTS IMPORTS
-import Accordion from "./Accordion.jsx";
+import Movies from "./Movies.jsx";
 import Media from "./Media";
 import Form from "./Form";
 
@@ -59,8 +59,8 @@ export default function Main (props, {children}) {
         <section id="MF-SECTION-1" className="row">
           <Form lang={props.lang} path={props.path} />
         </section>
-        <section id="MF-SECTION-2" className="row">
-          <Accordion movies={movies} URL_IMAGE={URL_IMAGE} lang={props.lang} />
+        <section id="MF-SECTION-2" className="row pt-5">
+          <Movies movies={movies} URL_IMAGE={URL_IMAGE} lang={props.lang} />
         </section>
       </main>
     )
