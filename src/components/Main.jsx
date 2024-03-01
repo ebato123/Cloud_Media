@@ -1,5 +1,5 @@
 // DEPENDENCIES IMPORTS
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 // import YouTube from "react-youtube";
 
 // CONTEXT IMPORTS
