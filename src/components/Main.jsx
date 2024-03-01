@@ -1,5 +1,5 @@
 // DEPENDENCIES IMPORTS
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 // import YouTube from "react-youtube";
 
 // CONTEXT IMPORTS
@@ -74,7 +74,10 @@ export default function Main (props, {children}) {
           <h2>{mainTittle}</h2>
         </section>
         <section id="M-SECTION-2" className="row SECTION p-4">
-          <video src={mainVideo} alt="main-video" controls></video>
+          <video autoplay loop>
+            <source src={mainVideo} type="video/mp4"></source>
+            Your browser does not support the video tag.
+          </video>
         </section>
         <section id="M-SECTION-3" className="row p-3">
           <Media
