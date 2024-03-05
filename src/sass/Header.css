@@ -13,6 +13,9 @@ header #H-SECTION-1 img {
 header #H-SECTION-2 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   height: 130px;
+}
+header #H-SECTION-2 a {
+  margin-right: 15%;
 }/*# sourceMappingURL=Header.css.map */

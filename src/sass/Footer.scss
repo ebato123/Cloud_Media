@@ -1,12 +1,12 @@
 
-// X-SMALL DISPLAY
+// X-SMALL DISPLAY (base)
 
 footer {
   align-items: center;
   background-color: black;
   display: flex;
   height: 250px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0% !important;
   width: 100% !important;
 
@@ -63,4 +63,13 @@ footer {
       }
     }
   } 
+}
+
+// MEDIUM DISPLAY 
+@media (min-width: 768px){
+  footer{
+    section.F-SECTION{
+      max-width: 300px;
+    }
+  }
 }

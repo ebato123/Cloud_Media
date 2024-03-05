@@ -1,8 +1,9 @@
 // CONTEXT IMPORTS
 import { apiContext } from "../context/apiContext";
+import { formContext } from "../context/formContext";
 
 // DEPENDENCIES IMPORTS
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 export default function Form(props, {children}) {
   // Hooks
@@ -10,19 +11,24 @@ export default function Form(props, {children}) {
     props.lang === "en" ? "subscribe" : "suscribirse"
   );
   const { searchMovies, setSearchKey } = useContext(apiContext);
-
+  const { globalState, setGlobalState } = useContext(formContext);
+  
   // Toggle FUNCTIONS
   function toggleState() {
     if (props.lang === "en") {
       if (currentState === "subscribe") {
+        setGlobalState("subscribe");
         setCurrentState("login");
       } else {
+        setGlobalState("login");
         setCurrentState("subscribe");
       }
     } else {
       if (currentState === "suscribirse") {
+        setGlobalState("suscribirse");
         setCurrentState("iniciarSesion");
       } else {
+        setGlobalState("iniciarSesion");
         setCurrentState("suscribirse");
       }
     }
@@ -53,11 +59,14 @@ export default function Form(props, {children}) {
   let [formTittle, placeHolder1, placeHolder2,
     label2, label4, inputType, buttonTittle1,
     buttonTittle2, p1, mfButton1, mfButton2, mfPlaceHolder1] = "";
-
+  // Form2 state
+  let changingState = undefined;
+  props.id === "form-2" ? changingState = globalState : changingState = currentState;
+  
   // EN case
   if (props.lang === "en"){
     // Login Variables
-    switch (currentState) {
+    switch (changingState) {
       case "login":
         formTittle = "Log In";
         placeHolder1 = "Enter your email.";
@@ -89,7 +98,7 @@ export default function Form(props, {children}) {
   // ES case
   }else{
     // Login Variables
-    switch (currentState) {
+    switch (changingState) {
       case "iniciarSesion":
         formTittle = "Inicia Sesión";
         placeHolder1 = "Ingrese su email.";
@@ -123,7 +132,7 @@ export default function Form(props, {children}) {
   // LOGIN FORM
   if (props.path === "/login" || props.path === "/login/en") {
     return (
-      <form onSubmit={submitted} className="p-3 m-5">
+      <form onSubmit={submitted} className={"p-3 m-5 " + props.display} id={props.id}>
         <h2>{formTittle}</h2>
         <article className="form-group">
           <label>Email</label>
@@ -145,8 +154,8 @@ export default function Form(props, {children}) {
           <button type="submit" className="btn btn-primary">
             {buttonTittle1}
           </button>
-          <p>{p1}</p>
-          <div className="btn btn-primary" onClick={toggleState}>
+          <p className={props.display}>{p1}</p>
+          <div className={"btn btn-primary " + props.display} onClick={toggleState}>
             {buttonTittle2}
           </div>
         </article>

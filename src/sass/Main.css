@@ -142,7 +142,7 @@ body div#App main section#M-SECTION-2 video {
   border-radius: 5px;
   box-shadow: 7px 5px 30px rgba(0, 17, 142, 0.724);
   min-width: 1px;
-  max-width: 850px;
+  max-width: 800px;
   height: auto;
   padding: 0%;
 }
@@ -151,6 +151,7 @@ body div#App main section#M-SECTION-3 {
   align-items: center;
   justify-content: center;
   margin: 0% !important;
+  max-width: 1000px;
 }
 body div#App main section#LM-SECTION-1 {
   display: flex;
@@ -163,4 +164,14 @@ body div#App main section#MF-SECTION-1, body div#App main section#MF-SECTION-2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+@media (min-width: 1200px) {
+  section#LM-SECTION-1 {
+    flex-direction: row !important;
+    justify-content: space-evenly;
+  }
+  section#LM-SECTION-1 form#form-2 {
+    display: flex !important;
+  }
 }/*# sourceMappingURL=Main.css.map */

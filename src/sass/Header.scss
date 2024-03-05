@@ -15,7 +15,10 @@ header{
     #H-SECTION-2{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         height:  130px;
+        a{
+            margin-right: 15%;
+        }
     }
 }

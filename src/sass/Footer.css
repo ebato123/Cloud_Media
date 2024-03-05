@@ -3,7 +3,7 @@ footer {
   background-color: black;
   display: flex;
   height: 250px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0% !important;
   width: 100% !important;
 }
@@ -43,5 +43,10 @@ footer section.F-SECTION#F-SECTION-3 {
   }
   footer section.F-SECTION#F-SECTION-3 {
     display: flex;
+  }
+}
+@media (min-width: 768px) {
+  footer section.F-SECTION {
+    max-width: 300px;
   }
 }/*# sourceMappingURL=Footer.css.map */
