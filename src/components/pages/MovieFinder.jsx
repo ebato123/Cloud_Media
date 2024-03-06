@@ -15,7 +15,7 @@ export default function MovieFinder(props, {children}) {
 
   return (
     <>
-      <Header lang={props.lang} path={"/login"} />
+      <Header lang={props.lang} path={props.path} />
       <main className="container mt-3">
         <section id="MF-SECTION-1" className="row">
           <Form lang={props.lang} path={props.path} />
@@ -28,7 +28,3 @@ export default function MovieFinder(props, {children}) {
     </>
   );
 }
-
-/*
-
-*/

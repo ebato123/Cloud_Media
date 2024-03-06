@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body div#App main section#M-SECTION-3 a.media {
   display: flex;
   align-items: center;
@@ -36,7 +35,6 @@ body div#App main section#M-SECTION-3 img.media#max {
   box-shadow: 5px 3px 10px rgba(1, 9, 232, 0.724) !important;
 }
 
-/* EMPROLIJAR SEMÁNTICA */
 body div#App main form {
   margin: 0% !important;
   align-items: center;
@@ -90,12 +88,30 @@ body div#App main form label {
   text-shadow: 5px 2px 5px rgba(0, 30, 255, 0.767);
 }
 
+body div#App main form#form-1 {
+  display: flex !important;
+}
+body div#App main form#form-1 p, body div#App main form#form-1 div {
+  display: flex !important;
+}
+
 body div#App main section#MF-SECTION-1 form {
   max-width: 400px;
   min-height: 180px !important;
   border-radius: 15px !important;
 }
 
+@media (min-width: 1200px) {
+  body div#App main form#form-1 {
+    display: flex !important;
+  }
+  body div#App main form#form-1 p, body div#App main form#form-1 div {
+    display: none !important;
+  }
+  body div#App main form#form-2 {
+    display: flex !important;
+  }
+}
 body div#App main section#MF-SECTION-2 section.row {
   padding-bottom: 25px;
   width: 100vw;
@@ -167,11 +183,8 @@ body div#App main section#MF-SECTION-1, body div#App main section#MF-SECTION-2 {
 }
 
 @media (min-width: 1200px) {
-  section#LM-SECTION-1 {
+  body div#App main section#LM-SECTION-1 {
     flex-direction: row !important;
     justify-content: space-evenly;
-  }
-  section#LM-SECTION-1 form#form-2 {
-    display: flex !important;
   }
 }/*# sourceMappingURL=Main.css.map */

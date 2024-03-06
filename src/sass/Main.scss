@@ -66,11 +66,8 @@ body div#App main{
 
 @media (min-width: 1200px){
     // LOGIN MAIN
-    section#LM-SECTION-1{
+    body div#App main section#LM-SECTION-1{
         flex-direction: row !important;
         justify-content: space-evenly;
-        form#form-2{
-            display: flex !important;
-        }
     }
 }

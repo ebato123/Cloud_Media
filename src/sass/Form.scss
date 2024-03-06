@@ -1,4 +1,4 @@
-/* EMPROLIJAR SEMÁNTICA */
+
 //------------ X-SMALL DISPLAY (base) ------------//
 
 // GENERAL FORM
@@ -61,6 +61,14 @@ body div#App main form {
   }
 }
 
+// LOGIN FORM-1
+body div#App main form#form-1{
+  display: flex !important; 
+   & p, & div{
+    display: flex !important; 
+  }
+}
+
 // MOVIE FINDER FORM
 body div#App main section#MF-SECTION-1 form{
   max-width: 400px;
@@ -70,8 +78,17 @@ body div#App main section#MF-SECTION-1 form{
 
 //------------ (up to 1200px) EXTRA LARGE DISPLAY ------------//
 
-// @media (min-width: 1200px){
-//   body div#App main form#form-1 {
+@media (min-width: 1200px){
 
-//   }
-// }
+  body div#App main form{
+    &#form-1{
+      display: flex !important; 
+      & p, & div{
+        display: none !important; 
+    }
+    }
+    &#form-2 {
+      display: flex !important;
+    }
+  }
+}

@@ -18,6 +18,9 @@ export default class Header extends React.Component {
                 </section>
             );
         }
+        let mfButtPath = "";
+        this.props.lang === "en" ? mfButtPath = "/login/en" : mfButtPath = "/login";
+
         // LOGIN HEADER
         if(this.state.path === "/login" || this.state.path === "/login/en"){
             return(
@@ -30,10 +33,15 @@ export default class Header extends React.Component {
             );
             
         // MOVIE FINDER HEADER
-        // }else if(this.state.path === "/movie_finder" || this.state.path === "/movie_finder/en"){
-        //     return(
-        //         <></>
-        //     );
+        }else if(this.state.path === "/movie_finder" || this.state.path === "/movie_finder/en"){
+            return(
+                <header className="row">
+                    <HeaderSec1 />
+                    <section className="col-6" id="H-SECTION-2">
+                        <LinkButton lang={this.props.lang} path={mfButtPath}/>
+                    </section>
+                </header>
+            );
 
         // HOME HEADER
         }else{

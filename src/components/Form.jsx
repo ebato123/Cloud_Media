@@ -1,35 +1,43 @@
+// DEPENDENCIES IMPORTS
+import React, { useState, useContext, useEffect } from "react";
+
 // CONTEXT IMPORTS
 import { apiContext } from "../context/apiContext";
 import { formContext } from "../context/formContext";
 
-// DEPENDENCIES IMPORTS
-import React, { useState, useContext, useEffect } from "react";
+
 
 export default function Form(props, {children}) {
   // Hooks
-  const [currentState, setCurrentState] = useState(
-    props.lang === "en" ? "subscribe" : "suscribirse"
-  );
+  const [currentState, setCurrentState] = useState(props.state);
   const { searchMovies, setSearchKey } = useContext(apiContext);
-  const { globalState, setGlobalState } = useContext(formContext);
+  const { globalState, setGlobalState } = useContext(formContext)
+
+  // Changing State (forms state)
+  useEffect(() => {
+    // Ejecutar solo en la primer instancia
+    setGlobalState(props.state);
+  }, [props.state, setGlobalState]);
+  let changingState = undefined;
+  props.id === "form-2" ? changingState = globalState : changingState = currentState;
   
   // Toggle FUNCTIONS
   function toggleState() {
     if (props.lang === "en") {
       if (currentState === "subscribe") {
-        setGlobalState("subscribe");
         setCurrentState("login");
+        setGlobalState("subscribe")
       } else {
-        setGlobalState("login");
         setCurrentState("subscribe");
+        setGlobalState("login")
       }
     } else {
       if (currentState === "suscribirse") {
-        setGlobalState("suscribirse");
         setCurrentState("iniciarSesion");
+        setGlobalState("suscribirse");
       } else {
-        setGlobalState("iniciarSesion");
         setCurrentState("suscribirse");
+        setGlobalState("iniciarSesion");
       }
     }
   }
@@ -37,7 +45,7 @@ export default function Form(props, {children}) {
   // Submitted Form functions
   const submitted = (e) => {
     let alert1 = "";
-    switch (currentState) {
+    switch (changingState) {
       case "login":
         alert1 = "Back-End is not ready yet :(";
         break;
@@ -59,10 +67,7 @@ export default function Form(props, {children}) {
   let [formTittle, placeHolder1, placeHolder2,
     label2, label4, inputType, buttonTittle1,
     buttonTittle2, p1, mfButton1, mfButton2, mfPlaceHolder1] = "";
-  // Form2 state
-  let changingState = undefined;
-  props.id === "form-2" ? changingState = globalState : changingState = currentState;
-  
+
   // EN case
   if (props.lang === "en"){
     // Login Variables
