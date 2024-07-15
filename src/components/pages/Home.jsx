@@ -36,89 +36,89 @@ export default function Home (props){
     return(
         <>
             <Header lang={props.lang} path={props.path}/>
-            <main className="row">
+            <main className="row" id="HOME">
                 <section id="M-SECTION-1" className="row SECTION p-4">
-                <h2>{mainTittle}</h2>
+                    <h2>{mainTittle}</h2>
                 </section>
                 <section id="M-SECTION-2" className="row SECTION p-2 p-sm-5">
-                <video autoplay muted playsinline loop controls>
-                    <source src={mainVideo} type="video/mp4"></source>
-                    Your browser does not support the video tag.
-                </video>
+                    <video autoplay muted playsinline loop controls>
+                        <source src={mainVideo} type="video/mp4"></source>
+                        Your browser does not support the video tag.
+                    </video>
                 </section>
                 <section id="M-SECTION-3" className="row p-2 p-sm-4">
-                <Media
-                    href="https://www.netflix.com/browse"
-                    src={netflixLogo}
-                    alt="netflix"
-                    id="netflix"
-                ></Media>
-                <Media
-                    href="https://auth.max.com"
-                    src={maxLogo}
-                    alt="max"
-                    id="max"
-                ></Media>
-                <Media
-                    href="https://www.primevideo.com"
-                    src={primeLogo}
-                    alt="prime"
-                    id="prime"
-                ></Media>
-                <Media
-                    href="https://www.apple.com/la/apple-tv-plus/"
-                    src={appleLogo}
-                    alt="apple"
-                    id="apple"
-                ></Media>
-                <Media
-                    href="https://www.disneyplus.com/es-419/home"
-                    src={disneyLogo}
-                    alt="disney"
-                    id="disney"
-                ></Media>
-                <Media
-                    href="https://www.starplus.com/movies"
-                    src={starLogo}
-                    alt="star"
-                    id="star"
-                ></Media>
-                <Media
-                    href="https://www.paramountplus.com/home/"
-                    src={paramountLogo}
-                    alt="paramount"
-                    id="paramount"
-                ></Media>
-                <Media
-                    href="https://www.youtube.com"
-                    src={youtubeLogo}
-                    alt="youtube"
-                    id="youtube"
-                ></Media>
-                <Media
-                    href="https://www.twitch.tv"
-                    src={twitchLogo}
-                    alt="twitch"
-                    id="twitch"
-                ></Media>
-                <Media
-                    href="https://www.crunchyroll.com/es/"
-                    src={crunchyLogo}
-                    alt="crunchy"
-                    id="crunchy"
-                ></Media>
-                <Media
-                    href="https://www.flow.com.ar"
-                    src={flowLogo}
-                    alt="flow"
-                    id="flow"
-                ></Media>
-                <Media
-                    href="https://pluto.tv/es"
-                    src={plutoLogo}
-                    alt="pluto"
-                    id="pluto"
-                ></Media>
+                    <Media
+                        href="https://www.netflix.com/browse"
+                        src={netflixLogo}
+                        alt="netflix"
+                        id="netflix"
+                    ></Media>
+                    <Media
+                        href="https://auth.max.com"
+                        src={maxLogo}
+                        alt="max"
+                        id="max"
+                    ></Media>
+                    <Media
+                        href="https://www.primevideo.com"
+                        src={primeLogo}
+                        alt="prime"
+                        id="prime"
+                    ></Media>
+                    <Media
+                        href="https://www.apple.com/la/apple-tv-plus/"
+                        src={appleLogo}
+                        alt="apple"
+                        id="apple"
+                    ></Media>
+                    <Media
+                        href="https://www.disneyplus.com/es-419/home"
+                        src={disneyLogo}
+                        alt="disney"
+                        id="disney"
+                    ></Media>
+                    <Media
+                        href="https://www.starplus.com/movies"
+                        src={starLogo}
+                        alt="star"
+                        id="star"
+                    ></Media>
+                    <Media
+                        href="https://www.paramountplus.com/home/"
+                        src={paramountLogo}
+                        alt="paramount"
+                        id="paramount"
+                    ></Media>
+                    <Media
+                        href="https://www.youtube.com"
+                        src={youtubeLogo}
+                        alt="youtube"
+                        id="youtube"
+                    ></Media>
+                    <Media
+                        href="https://www.twitch.tv"
+                        src={twitchLogo}
+                        alt="twitch"
+                        id="twitch"
+                    ></Media>
+                    <Media
+                        href="https://www.crunchyroll.com/es/"
+                        src={crunchyLogo}
+                        alt="crunchy"
+                        id="crunchy"
+                    ></Media>
+                    <Media
+                        href="https://www.flow.com.ar"
+                        src={flowLogo}
+                        alt="flow"
+                        id="flow"
+                    ></Media>
+                    <Media
+                        href="https://pluto.tv/es"
+                        src={plutoLogo}
+                        alt="pluto"
+                        id="pluto"
+                    ></Media>
                 </section>
             </main>
             <Footer lang={props.lang} path={props.path}/>

@@ -49,4 +49,17 @@ footer section.F-SECTION#F-SECTION-3 {
   footer section.F-SECTION {
     max-width: 300px;
   }
+}
+@media (min-width: 1200px) {
+  footer {
+    height: 200px;
+    width: 50% !important;
+    border-radius: 15px;
+    justify-content: space-evenly;
+  }
+  footer section#F-SECTION-2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }/*# sourceMappingURL=Footer.css.map */

@@ -73,3 +73,19 @@ footer {
     }
   }
 }
+
+// MEDIUM DISPLAY 
+@media (min-width: 1200px){
+  footer{
+    height: 200px;
+    width: 50% !important;
+    border-radius: 15px;
+    justify-content: space-evenly;
+
+    section#F-SECTION-2{
+      flex-direction: row;
+      align-items: center;
+      justify-content:space-evenly;
+    }
+  } 
+}
